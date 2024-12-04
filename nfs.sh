@@ -41,6 +41,7 @@ EOL'
 
 # Ajustar permisos para el directorio compartido
 sudo chown -R www-data:www-data /var/nfs/shared
+sudo chown -R nobody:nogroup /var/nfs/shared
 sudo chmod -R 755 /var/nfs/shared
 
 
