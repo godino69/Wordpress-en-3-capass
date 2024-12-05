@@ -37,3 +37,19 @@ Este seria nuestro grupo de seguridad del NFS donde tendriamos permitido el SSH 
 Esta seria la configuracion de nuestra VPC donde tendriamos 3 subredes, una para cada capa. La subred de la capa 2 y 3 irian conectadas a nuestra tabla de enrutamiento privada y la subred de la capa 1 a la pública.
 Esas tablas re enrutamiento irian a su vez conectadas a la puerta de enlace a internet
 ![image](https://github.com/user-attachments/assets/a10ee4b2-56d5-4bfa-a2b3-f5d8fadd5369)
+
+### **Configuración HTTPS con Certbot**
+
+Para habilitar un sitio web seguro mediante HTTPS, utilizaremos **Certbot**, una herramienta automatizada que gestiona la obtención y renovación de certificados SSL de **Let's Encrypt**.
+
+#### **Requisitos Previos**
+1. Tener un dominio público configurado que apunte a la IP elástica asociada al balanceador de carga.
+2. Instalar Certbot en el servidor del balanceador de carga.
+
+#### **Pasos para Configurar Certbot**
+
+1. **Instalar Certbot y sus dependencias:**
+   En el servidor del balanceador, instala Certbot con los siguientes comandos:
+   ```bash
+   sudo apt update
+   sudo apt install certbot python3-certbot-apache -y
