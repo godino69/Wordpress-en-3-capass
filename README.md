@@ -1,5 +1,19 @@
 # Despliegue de CMS WordPress en Alta Disponibilidad en AWS
 
+## **Índice**
+
+1. [Arquitectura del Proyecto](#arquitectura-del-proyecto)
+   - [Diseño de Capas](#diseño-de-capas)
+   - [Características](#características)
+2. [Grupos de Seguridad](#grupos-de-seguridad)
+   - [Balanceador](#balanceador)
+   - [NFS](#nfs)
+   - [Servidores Web](#servidores-web)
+   - [MYSQL](#mysql)
+3. [VPC](#vpc)
+4. [Configuración HTTPS con Certbot](#configuración-https-con-certbot)
+   - [Requisitos Previos](#requisitos-previos)
+   - [Pasos para Configurar Certbot](#pasos-para-configurar-certbot)
 
 ## Arquitectura del Proyecto
 
