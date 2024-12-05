@@ -28,6 +28,7 @@ sudo tee /etc/apache2/sites-available/wordpress.conf > /dev/null <<EOL
         AllowOverride All
         Require all granted
     </Directory>
+    SetEnvIf X-Forwarded-Proto "https" HTTPS=on
 </VirtualHost>
 EOL
 
