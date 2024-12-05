@@ -53,3 +53,9 @@ Para habilitar un sitio web seguro mediante HTTPS, utilizaremos **Certbot**, una
    ```bash
    sudo apt update
    sudo apt install certbot python3-certbot-apache -y
+   
+2. **Obtener el certificado SSL:**
+    Configura Certbot para el dominio:
+   ```bash
+   certbot certonly --apache -d wordpressgodi.zapto.org --email agodinoc01@iesalbarregas.es --agree-tos --non-interactive --redirect
+   
