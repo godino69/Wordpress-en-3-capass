@@ -16,5 +16,24 @@
 
 ---
 
+### Grupos de seguridad
+**Balanceador**
+Este seria nuestro grupo de seguridad del balanceador donde tendriamos permitido el SSH, HTTP y HTTPS.
+![image](https://github.com/user-attachments/assets/70a1298e-c4e6-495c-906c-5826cd8f39b4)
 
-![image](https://github.com/user-attachments/assets/2c67e3ab-6e55-49ea-9f79-5fb535e07569)
+**NFS**
+Este seria nuestro grupo de seguridad del NFS donde tendriamos permitido el SSH y NFS.
+![image](https://github.com/user-attachments/assets/10086673-3392-47ad-bf86-ea5f7879b152)
+
+**Servidores Web**
+Este seria nuestro grupo de seguridad del NFS donde tendriamos permitido el SSH, NFS, HTTP y NFS.
+![image](https://github.com/user-attachments/assets/76613a26-e687-45ad-82c9-e0e0efee8975)
+
+**MYSQL**
+Este seria nuestro grupo de seguridad del NFS donde tendriamos permitido el SSH y NFS.
+![image](https://github.com/user-attachments/assets/f5d63713-80f0-4824-a243-c622f46cff54)
+
+### VPC
+Esta seria la configuracion de nuestra VPC donde tendriamos 3 subredes, una para cada capa. La subred de la capa 2 y 3 irian conectadas a nuestra tabla de enrutamiento privada y la subred de la capa 1 a la pública.
+Esas tablas re enrutamiento irian a su vez conectadas a la puerta de enlace a internet
+![image](https://github.com/user-attachments/assets/a10ee4b2-56d5-4bfa-a2b3-f5d8fadd5369)
