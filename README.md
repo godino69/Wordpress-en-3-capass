@@ -10,6 +10,7 @@
 4. [Configuración HTTPS con Certbot](#configuración-https-con-certbot)
    - [Requisitos Previos](#requisitos-previos)
    - [Pasos para Configurar Certbot](#pasos-para-configurar-certbot)
+2. [Cambiar hostname](#cambiar-hostname)
 
 ## Arquitectura del Proyecto
 
@@ -69,3 +70,10 @@ Para habilitar un sitio web seguro mediante HTTPS, utilizaremos **Certbot**, una
    ```bash
    certbot certonly --apache -d wordpressgodi.zapto.org --email agodinoc01@iesalbarregas.es --agree-tos --non-interactive --redirect
    
+#### **Cambiar hostname*
+
+Para poder cambiar el hostanme de cada uno de nuestros servidores hemos usado el siguiente comando indicadole al final nuestro nombre/apellido
+```bash
+sudo hostnamectl set-hostname Balanceador-Godino
+
+
